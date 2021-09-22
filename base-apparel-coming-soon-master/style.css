@@ -1,0 +1,94 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.container{
+    background-image: url("bg-pattern-desktop.svg");
+    display:grid;
+    grid-template-rows: 50% 50%;
+    grid-template-rows: 20% auto;
+    padding:20px;
+    font-family: Josefin Sans;
+    width:60%;
+    margin:auto; 
+    margin-top:10%;
+    background-color: linear-gradient( 135deg, hsl(0, 0%, 100%),hsl(0, 100%, 98%));
+    box-shadow: 30px;
+}
+.logo{
+    height:40px;
+    align-self: start;
+
+}
+.content{
+    align-self: stretch;
+}
+    
+
+#weare,.main-content{
+    color:  hsl(0, 36%, 70%);
+    
+}
+h1{
+    font-size:40px;
+    font-weight: 100;
+    letter-spacing: 15px;
+}
+.main-content{
+  font-size:15px;
+  font-weight:150;
+  margin-top: 30px;
+}
+#weare{
+    margin-top: 30px;
+}
+input{
+    padding:13px;
+    border-radius:20px;
+    border:1px solid hsl(0, 36%, 70%);
+    margin-top:20px;
+   
+    
+}
+button{
+    background-image:linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding-bottom:13px;
+    position:relative;
+    right:35px;
+    width:70px;
+    border-radius:25px;
+    padding-top:6px;
+    border:1px solid hsl(0, 74%, 74%);
+}
+input:focus{
+    outline: none;
+}
+.picture{
+    height:400px;
+    padding-left:60px;
+    grid-column-start:2;
+    grid-row:1/3;
+   
+    width:350px;
+}
+@media screen and (max-width:650px){
+.container{
+  display:flex;
+  flex-direction:column;
+  width:90%;
+}
+h1 ,.main-content{
+    text-align: center;
+}
+.logo{
+    margin-left:8%;
+}
+.picture{
+    padding:10px;
+    margin:auto;
+}
+input{
+    margin:auto;
+    width:70%;
+    margin-left:5%;
+}
+    
+}
